@@ -1,0 +1,38 @@
+export const weapons = [
+  {
+    name: "12-gauge pump Shotgun",
+    skill: "Firearms (shotgun)",
+    damage: "4D6",
+    baseRange: 10,
+    usesPerRound: 1,
+    capacity: 5,
+    malfunction: 100,
+  },
+  {
+    name: ".38 Revolver",
+    skill: "Firearms (handgun)",
+    damage: "1D10",
+    baseRange: 15,
+    usesPerRound: "1 (3)",
+    capacity: 6,
+    malfunction: 100,
+  },
+  {
+    name: "Small Knife",
+    skill: "Fighting (Brawl)",
+    damage: "1D4+DB",
+    baseRange: "Touch",
+    usesPerRound: 1,
+    capacity: "-",
+    malfunction: "-",
+  },
+  {
+    name: ".303 Lee Enfield",
+    skill: "Firearms (rifle)",
+    damage: "2D6+4",
+    baseRange: 110,
+    usesPerRound: 1,
+    capacity: 5,
+    malfunction: 100,
+  },
+];
