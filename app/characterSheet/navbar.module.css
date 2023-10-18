@@ -1,0 +1,20 @@
+.controlsBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editToggleBox {
+  border: solid 1px;
+}
+.navBox {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.navBox li {
+  border: solid 1px;
+}
+.navBox a {
+  text-decoration: none;
+}

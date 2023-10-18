@@ -17,7 +17,7 @@ export const characterData = {
     edu: 60,
     int: 70,
     pow: 55,
-    move: 6,
+    mov: 6,
   },
   pinnedSkills: {},
   status: {
