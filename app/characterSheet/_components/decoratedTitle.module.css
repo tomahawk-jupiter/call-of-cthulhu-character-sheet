@@ -1,0 +1,39 @@
+.titleContainer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  /* font-variant: small-caps; */
+  font-weight: 400;
+}
+
+.titleContainer::before,
+.titleContainer::after {
+  content: "";
+  flex-grow: 1;
+  border-top: 1px solid #000; /* Customize the line style as needed */
+  margin: 0 10px; /* Adjust the spacing between the title and lines */
+}
+
+/* .title::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 4px;
+  width: 40px;
+  background-color: black;
+}
+
+.title::before {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 4px;
+  width: 40px;
+  background-color: black;
+} */
