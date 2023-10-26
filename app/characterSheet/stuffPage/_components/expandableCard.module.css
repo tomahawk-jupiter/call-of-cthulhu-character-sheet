@@ -1,0 +1,19 @@
+.card {
+  border: solid 1px;
+  margin-bottom: 1rem;
+  padding: 0.5em;
+}
+
+.cardHeader {
+  border-bottom: solid 1px;
+}
+
+.toggleOpenBtn {
+  background-color: white;
+  border: none;
+  text-align: center;
+}
+
+/* .cardContent {
+  border: solid 1px;
+} */

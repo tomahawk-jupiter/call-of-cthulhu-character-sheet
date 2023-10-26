@@ -1,5 +1,11 @@
-# Call of Cthulhu Characters Sheet
+# Call of Cthulhu Character Sheet
 
-An interactive character sheet for the TTRPG Call of Cthulhu. Primaryily designed for smaller screens.
+WORK IN PROGRESS
 
-My notes are in `NOTES.md`.
+An interactive character sheet for the table top role playing game Call of Cthulhu. Primarily designed for smaller screens.
+
+![screenshot](./screenshots/screenshot-unfinished.png)
+
+## Design Ideas
+
+![design ideas](./designs/character-sheet-done1.png)

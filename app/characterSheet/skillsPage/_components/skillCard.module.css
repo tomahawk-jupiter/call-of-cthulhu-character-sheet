@@ -1,0 +1,25 @@
+.skillCard {
+  border: solid 1px;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 1rem;
+}
+
+.cardLeft {
+  display: flex;
+}
+
+.circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: solid 1px;
+  border-radius: 50%;
+}
+
+.skillBaseValue {
+  margin-left: 1em;
+  min-width: 2.5em;
+}

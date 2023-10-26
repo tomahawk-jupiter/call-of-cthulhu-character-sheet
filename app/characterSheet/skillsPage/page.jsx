@@ -1,12 +1,22 @@
-import SkillElement from "./_components/SkillElement";
+import SkillCard from "./_components/SkillCard";
+import { skills } from "../../../gameData/skills";
+import DecoratedTitle from "../_components/DecoratedTitle";
 
 const SkillsPage = () => {
   return (
     <>
-      <SkillElement />
-      <SkillElement />
-      <SkillElement />
-      <SkillElement />
+      {/* TODO: make skill list fiterable */}
+      {/* <input type="text" placeholder="Filter" /> */}
+
+      <DecoratedTitle title="skills" />
+
+      {skills.map((skill, i) => {
+        return <SkillCard key={i} skill={skill} />;
+      })}
+      {/* <SkillCard />
+      <SkillCard />
+      <SkillCard />
+      <SkillCard /> */}
     </>
   );
 };
