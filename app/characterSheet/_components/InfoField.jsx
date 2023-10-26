@@ -1,8 +1,10 @@
+import styles from "./info.module.css";
+
 const InfoField = ({ field, value }) => {
   return (
-    <div>
+    <div className={styles.infoField}>
       <span>{field}</span>
-      <span>{value}</span>
+      <span className={styles.infoFieldValue}>{value}</span>
     </div>
   );
 };

@@ -1,3 +1,21 @@
+.characteristicsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.characteristicColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .characteristicFieldBox {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.characteristicLabel {
+  min-width: 3rem;
 }

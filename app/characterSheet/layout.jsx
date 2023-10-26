@@ -9,22 +9,26 @@ export default function CharacterSheetLayout({ children }) {
           <label htmlFor="editMode">Edit</label>
           <input type="checkbox" name="" id="editMode" />
         </div>
-        <ul className={styles.navBox}>
-          <li>
-            <Link href="/characterSheet">Front</Link>
-          </li>
-          <li>
-            <Link href="/characterSheet/skillsPage">Skills</Link>
-          </li>
-          <li>
-            <Link href="/characterSheet/stuffPage">Stuff</Link>
-          </li>
-          <li>
-            <Link href="/characterSheet/storyPage">Story</Link>
-          </li>
-        </ul>
+        <nav className={styles.navigationOuter}>
+          <ul className={styles.navigationInner}>
+            <li>
+              <Link className={styles.activeLink} href="/characterSheet">
+                Front
+              </Link>
+            </li>
+            <li>
+              <Link href="/characterSheet/skillsPage">Skills</Link>
+            </li>
+            <li>
+              <Link href="/characterSheet/stuffPage">Stuff</Link>
+            </li>
+            <li>
+              <Link href="/characterSheet/storyPage">Story</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div>{children}</div>;
+      <div>{children}</div>
     </div>
   );
 }

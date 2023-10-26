@@ -1,0 +1,18 @@
+.statusContainer {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.valueBox {
+  border: solid 1px;
+  border-radius: 8px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 3rem;
+  justify-content: center;
+}

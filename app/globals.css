@@ -1,4 +1,25 @@
+:root {
+  --border-thickness: 1px;
+}
+
 body,
 html {
   margin: 0;
 }
+
+body {
+  max-width: 414px;
+  min-width: 320px;
+  margin: 0 auto;
+  border: solid;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+/*
+Phone widths: 320px to 414px
+
+Standard: 375px to 414px
+Small: 320px to 360px
+*/

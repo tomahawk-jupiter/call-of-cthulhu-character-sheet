@@ -1,0 +1,17 @@
+.skillsContainer {
+  flex: 2;
+  max-height: 250px;
+  position: relative;
+}
+
+.skillListScroll {
+  overflow: scroll;
+  max-height: 200px;
+}
+
+.skillFieldContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25em;
+}

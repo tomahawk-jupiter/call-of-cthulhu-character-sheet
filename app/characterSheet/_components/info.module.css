@@ -1,3 +1,33 @@
-.infoBox {
+.infoContainer {
   display: flex;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.avatar {
+  margin-right: 1rem;
+  height: 128px;
+  width: 128px;
+  object-fit: cover;
+}
+
+.infoTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.doubleFieldRow {
+  display: flex;
+  gap: 2em;
+}
+
+.infoField {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 0.5em; */
+}
+.infoFieldValue {
+  font-weight: 700;
+  margin-left: 1em;
 }

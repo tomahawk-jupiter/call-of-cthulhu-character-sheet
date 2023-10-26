@@ -5,16 +5,26 @@
 }
 
 .editToggleBox {
-  border: solid 1px;
+  /* border: solid 1px; */
 }
-.navBox {
+
+.navigationInner {
   list-style: none;
   padding: 0;
   display: flex;
 }
-.navBox li {
-  border: solid 1px;
-}
-.navBox a {
+
+.navigationInner a {
+  border-bottom: solid 1px;
+  border-right: solid 1px;
   text-decoration: none;
+  color: black;
+  padding: 0.5em 1em;
+}
+.navigationInner :last-child a {
+  border-right: none;
+}
+.activeLink {
+  border-top: solid 1px;
+  border-bottom: none !important;
 }

@@ -19,7 +19,8 @@ export const characterData = {
     pow: 55,
     mov: 6,
   },
-  pinnedSkills: {},
+  pinnedSkills: [],
+  skills: [],
   status: {
     hitpoints: {
       current: 12,

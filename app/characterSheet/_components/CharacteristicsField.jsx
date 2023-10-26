@@ -1,10 +1,12 @@
+import ThreeBoxValue from "./ThreeBoxValue";
 import styles from "./characteristics.module.css";
 
 const CharactisticsField = ({ stat, value }) => {
   return (
     <div className={styles.characteristicFieldBox}>
-      <div>{stat}</div>
-      <div>{value}</div>
+      <div className={styles.characteristicLabel}>{stat}</div>
+      <ThreeBoxValue value={72} />
+      {/* <div>{value}</div> */}
     </div>
   );
 };

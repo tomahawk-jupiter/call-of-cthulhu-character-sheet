@@ -1,0 +1,28 @@
+.threeBoxContainer {
+  display: flex;
+  border: solid var(--border-thickness);
+  border-radius: 5px;
+  text-align: center;
+  --fraction-value-txt-size: 0.75rem;
+}
+
+.threeBoxRightSide {
+  min-width: 2em;
+}
+
+.fullValue {
+  border-right: solid var(--border-thickness);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2em;
+}
+
+.halfValue {
+  border-bottom: solid var(--border-thickness);
+  font-size: var(--fraction-value-txt-size);
+}
+
+.fifthValue {
+  font-size: var(--fraction-value-txt-size);
+}

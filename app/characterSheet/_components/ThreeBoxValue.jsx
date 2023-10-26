@@ -1,10 +1,12 @@
-const ThreeBoxValue = () => {
+import styles from "./threeBoxValue.module.css";
+
+const ThreeBoxValue = ({ value }) => {
   return (
-    <div>
-      <div>100</div>
-      <div>
-        <div>50</div>
-        <div>25</div>
+    <div className={styles.threeBoxContainer}>
+      <div className={styles.fullValue}>{value}</div>
+      <div className={styles.threeBoxRightSide}>
+        <div className={styles.halfValue}>{value / 2}</div>
+        <div className={styles.fifthValue}>{value / 5}</div>
       </div>
     </div>
   );

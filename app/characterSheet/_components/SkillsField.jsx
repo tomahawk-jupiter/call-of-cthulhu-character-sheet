@@ -1,7 +1,11 @@
-const SkillField = () => {
+import ThreeBoxValue from "./ThreeBoxValue";
+import styles from "./skills.module.css";
+
+const SkillField = ({ skillName, value }) => {
   return (
-    <div>
-      <div>Skill attribute</div>
+    <div className={styles.skillFieldContainer}>
+      <div>{skillName}</div>
+      <ThreeBoxValue value={value} />
     </div>
   );
 };

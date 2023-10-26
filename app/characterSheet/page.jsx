@@ -1,4 +1,5 @@
 import parentStyles from "./../page.module.css";
+import styles from "./page.module.css";
 import Info from "./_components/Info";
 import Characteristics from "./_components/Characteristics";
 import Skills from "./_components/Skills";
@@ -10,8 +11,10 @@ const CharacterSheet = () => {
     <div className={parentStyles.pageContainer}>
       <Info />
       <Characteristics />
-      <Skills />
-      <Status />
+      <div className={styles.doubleSectionRow}>
+        <Skills />
+        <Status />
+      </div>
       <Combat />
     </div>
   );
