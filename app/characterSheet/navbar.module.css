@@ -4,10 +4,6 @@
   justify-content: space-between;
 }
 
-.editToggleBox {
-  /* border: solid 1px; */
-}
-
 .navigationInner {
   list-style: none;
   padding: 0;
@@ -27,4 +23,8 @@
 .activeLink {
   border-top: solid 1px;
   border-bottom: none !important;
+}
+
+.navigationInner a:active {
+  background-color: red;
 }

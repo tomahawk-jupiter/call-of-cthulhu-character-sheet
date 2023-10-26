@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import { usePathname } from "next/navigation";
 
 export default function CharacterSheetLayout({ children }) {
+  const pathname = usePathname();
+
   return (
     <div>
       <div className={styles.controlsBox}>
@@ -12,18 +16,50 @@ export default function CharacterSheetLayout({ children }) {
         <nav className={styles.navigationOuter}>
           <ul className={styles.navigationInner}>
             <li>
-              <Link className={styles.activeLink} href="/characterSheet">
+              <Link
+                className={
+                  pathname == "/characterSheet" ? styles.activeLink : ""
+                }
+                href="/characterSheet"
+              >
                 Front
               </Link>
             </li>
             <li>
-              <Link href="/characterSheet/skillsPage">Skills</Link>
+              <Link
+                className={
+                  pathname == "/characterSheet/skillsPage"
+                    ? styles.activeLink
+                    : ""
+                }
+                href="/characterSheet/skillsPage"
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <Link href="/characterSheet/stuffPage">Stuff</Link>
+              <Link
+                className={
+                  pathname == "/characterSheet/stuffPage"
+                    ? styles.activeLink
+                    : ""
+                }
+                href="/characterSheet/stuffPage"
+              >
+                Stuff
+              </Link>
             </li>
             <li>
-              <Link href="/characterSheet/storyPage">Story</Link>
+              <Link
+                className={
+                  pathname == "/characterSheet/storyPage"
+                    ? styles.activeLink
+                    : ""
+                }
+                href="/characterSheet/storyPage"
+              >
+                Story
+              </Link>
             </li>
           </ul>
         </nav>

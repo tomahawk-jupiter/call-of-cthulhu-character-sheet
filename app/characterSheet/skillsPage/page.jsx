@@ -1,7 +1,12 @@
+import SkillElement from "./_components/SkillElement";
+
 const SkillsPage = () => {
   return (
     <>
-      <h1>Skills Page</h1>
+      <SkillElement />
+      <SkillElement />
+      <SkillElement />
+      <SkillElement />
     </>
   );
 };
