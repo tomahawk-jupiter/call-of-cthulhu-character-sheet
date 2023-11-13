@@ -2,23 +2,24 @@ import { weapons } from "../../../gameData/weapons";
 import DecoratedTitle from "./DecoratedTitle";
 import styles from "./combat.module.css";
 
-const TableRow = ({ weapons }) => {
+const TableRow = ({ weapon }) => {
+  const elipsedName = `${weapon.name.slice(0, 10)}...`;
   return (
     <tr>
-      <td className={styles.tableCell}>{weapons[1].name}</td>
+      <td className={styles.tableCell}>{elipsedName}</td>
       {/* TODO: remove hardcoded value, use characters relevant skill */}
       {/* <td className={styles.tableCell}>{weapons[1].skill}</td> */}
       <td className={styles.tableCell}>{75}</td>
-      <td className={styles.tableCell}>{weapons[1].damage}</td>
-      <td className={styles.tableCell}>{weapons[1].baseRange}</td>
-      <td className={styles.tableCell}>{weapons[1].usesPerRound}</td>
-      <td className={styles.tableCell}>{weapons[1].capacity}</td>
-      <td className={styles.tableCell}>{weapons[1].malfunction}</td>
+      <td className={styles.tableCell}>{weapon.damage}</td>
+      <td className={styles.tableCell}>{weapon.baseRange}</td>
+      <td className={styles.tableCell}>{weapon.usesPerRound}</td>
+      <td className={styles.tableCell}>{weapon.capacity}</td>
+      <td className={styles.tableCell}>{weapon.malfunction}</td>
     </tr>
   );
 };
 
-const Combat = () => {
+const Combat = ({ combatStats, weapons }) => {
   return (
     <>
       <DecoratedTitle title="combat" />
@@ -32,23 +33,24 @@ const Combat = () => {
           <th className={styles.headerCell}>Ammo</th>
           <th className={styles.headerCell}>Malf.</th>
         </tr>
-        <TableRow weapons={weapons} />
-        <TableRow weapons={weapons} />
-        <TableRow weapons={weapons} />
+
+        {weapons.map((w, i) => {
+          return <TableRow key={i} weapon={w} />;
+        })}
       </table>
 
       <div className={styles.combatStatsContainer}>
         <div className={styles.combatStatsField}>
           <span>Dmg Bonus</span>
-          <span className={styles.valueBox}>10</span>
+          <span className={styles.valueBox}>{combatStats.damageBonus}</span>
         </div>
         <div className={styles.combatStatsField}>
           <span>Build</span>
-          <span className={styles.valueBox}>5</span>
+          <span className={styles.valueBox}>{combatStats.build}</span>
         </div>
         <div className={styles.combatStatsField}>
           <span>Dodge</span>
-          <span className={styles.valueBox}>20</span>
+          <span className={styles.valueBox}>{combatStats.dodge}</span>
         </div>
       </div>
     </>

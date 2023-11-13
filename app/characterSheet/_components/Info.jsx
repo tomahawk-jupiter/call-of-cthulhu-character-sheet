@@ -1,10 +1,9 @@
 import Image from "next/image";
 import profilePic from "../../../public/images/male-avatar.jpg";
 import styles from "./info.module.css";
-import { characterData } from "../../../gameData/characterData/character";
 import InfoField from "./InfoField";
 
-const Info = () => {
+const Info = ({ info }) => {
   return (
     <div className={styles.infoContainer}>
       <Image
@@ -15,15 +14,19 @@ const Info = () => {
         height={128}
       />
       <div className={styles.infoTextContainer}>
-        <InfoField field="Name" value={characterData.info.name} />
-        <InfoField field="Player" value={characterData.info.player} />
-        <InfoField field="Occupation" value={characterData.info.occupation} />
+        <InfoField field="Name" value={info.name} />
+        <InfoField field="Player" value={info.player} />
+        <InfoField field="Occupation" value={info.occupation} />
         <div className={styles.doubleFieldRow}>
-          <InfoField field="Age" value={characterData.info.age} />
-          <InfoField field="Sex" value={characterData.info.sex} />
+          <InfoField field="Age" value={info.age} />
+          <InfoField field="Sex" value={info.sex} />
         </div>
-        <InfoField field="Residence" value={characterData.info.residence} />
-        <InfoField field="Birthplace" value={characterData.info.birthplace} />
+        <InfoField field="Residence" value={info.residence} />
+        <InfoField field="Birthplace" value={info.birthplace} />
+      </div>
+      <div className={styles.rollDiceContainer}>
+        <button>ROLL</button>
+        <div>Result</div>
       </div>
     </div>
   );

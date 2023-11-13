@@ -6,9 +6,8 @@ const StuffPage = () => {
     <>
       <DecoratedTitle title="weapons" />
 
-      <ExpandableCard />
-      <ExpandableCard />
-      <ExpandableCard />
+      {/* TODO: make the ExpandableCard reusable for each category in the stuff */}
+      <ExpandableCard title="Revolver" content="Info about revolver" />
 
       <DecoratedTitle title="possessions" />
       <DecoratedTitle title="wealth" />

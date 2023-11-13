@@ -2,23 +2,24 @@ import DecoratedTitle from "./DecoratedTitle";
 import SkillField from "./SkillsField";
 import styles from "./skills.module.css";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return (
     <div className={styles.skillsContainer}>
       <DecoratedTitle title="skills" />
 
       <div className={styles.skillListScroll}>
-        <SkillField skillName={"Sleight of Hand"} value={42} />
-        <SkillField skillName={"Handgun"} value={85} />
-        <SkillField skillName={"Investigation"} value={80} />
-        <SkillField skillName={"Sleight of Hand"} value={42} />
-        <SkillField skillName={"Handgun"} value={64} />
-
-        <SkillField skillName={"Sleight of Hand"} value={42} />
-        <SkillField skillName={"Handgun"} value={85} />
-        <SkillField skillName={"Investigation"} value={80} />
-        <SkillField skillName={"Sleight of Hand"} value={42} />
-        <SkillField skillName={"Handgun"} value={64} />
+        {skills.map((skill, i) => {
+          return (
+            // TODO:
+            // dodge is 1/2 DEX
+            // language own in EDU
+            <SkillField
+              key={i}
+              skillName={skill.skill}
+              value={skill.baseValue}
+            />
+          );
+        })}
       </div>
     </div>
   );
